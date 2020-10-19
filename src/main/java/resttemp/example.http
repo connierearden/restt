@@ -1,0 +1,33 @@
+### GET USERS
+GET http://91.241.64.178:7081/api/users
+Accept: application/json
+
+### CREATE USER
+POST http://91.241.64.178:7081/api/users
+Set-Cookie: JSESSIONID=AB582E8F42B768BC0D3A95255145D1CE; Path=/; HttpOnly
+Accept: application/json
+{
+  "id": 3,
+  "name": "James",
+  "lastName": "Brown",
+  "age": 25
+}
+
+### UPDATE USER
+POST http://91.241.64.178:7081/api/users
+Set-Cookie: JSESSIONID=D5C14290CA262D61E150AD82B9356870; Path=/; HttpOnly
+Accept: application/json
+
+{
+  "id": 3,
+  "name": "Thomas",
+  "lastName": "Shelby",
+  "age": 25
+}
+
+### DELETE USER
+DELETE http://91.241.64.178:7081/api/users?id=3
+Set-Cookie: JSESSIONID=D5C14290CA262D61E150AD82B9356870; Path=/; HttpOnly
+Accept: application/json
+
+###
